@@ -20,6 +20,8 @@
 - (CGFloat)minimumInteritemSpacingForCollectionView:(UICollectionView *)collectionView;
 - (CGFloat)minimumLineSpacingForCollectionView:(UICollectionView *)collectionView;
 
+- (BOOL)onlyFirstLineLargeInCollectionView:(UICollectionView *)collectionView;
+
 @end
 
 @protocol RACollectionViewTripletLayoutDatasource <UICollectionViewDataSource>

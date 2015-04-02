@@ -27,6 +27,7 @@
 - (CGFloat)reorderingItemAlpha:(UICollectionView * )collectionview; //Default 0.
 - (UIEdgeInsets)autoScrollTrigerEdgeInsets:(UICollectionView *)collectionView; //Sorry, has not supported horizontal scroll.
 - (UIEdgeInsets)autoScrollTrigerPadding:(UICollectionView *)collectionView;
+- (BOOL)autoscrollEnabled:(UICollectionView * )collectionview;
 
 - (void)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout willBeginDraggingItemAtIndexPath:(NSIndexPath *)indexPath;
 - (void)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout didBeginDraggingItemAtIndexPath:(NSIndexPath *)indexPath;

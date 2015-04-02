@@ -46,6 +46,7 @@ typedef NS_ENUM(NSInteger, RAScrollDirction) {
 @property (nonatomic, assign) UIEdgeInsets scrollTrigerEdgeInsets;
 @property (nonatomic, assign) UIEdgeInsets scrollTrigePadding;
 @property (nonatomic, assign) BOOL setUped;
+@property (nonatomic, assign) BOOL autoscrollEnabled;
 
 @end
 
@@ -145,6 +146,10 @@ typedef NS_ENUM(NSInteger, RAScrollDirction) {
 
 - (void)autoScroll
 {
+    if ([self.delegate respondsToSelector:@selector(autoscrollEnabled:)] &&
+        ![self.delegate autoscrollEnabled:self.collectionView]) {
+        return;
+    }
     CGPoint contentOffset = self.collectionView.contentOffset;
     UIEdgeInsets contentInset = self.collectionView.contentInset;
     CGSize contentSize = self.collectionView.contentSize;

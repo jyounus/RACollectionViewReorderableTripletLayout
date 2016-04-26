@@ -2,7 +2,9 @@ Tinder-like Edit Profile Collection View Layout
 =========================
 I've slightly altered RACollectionViewReorderableTripletLayout to mimic the exact Tinder layout
 
+Great thanks for the library.
 
+An original word from the author:
 
 
 
